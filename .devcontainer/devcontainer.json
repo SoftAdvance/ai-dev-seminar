@@ -1,0 +1,31 @@
+{
+  "name": "AI開発セミナー環境",
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:20",
+  "postCreateCommand": "npm install && npm install -g @anthropic-ai/claude-code && echo '環境セットアップ完了'",
+  "postStartCommand": "echo '=== AI開発セミナーへようこそ！ === Claude Code: ターミナルで claude と入力して開始'",
+  "remoteEnv": {
+    "ANTHROPIC_API_KEY": "${localEnv:ANTHROPIC_API_KEY}"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "bradlc.vscode-tailwindcss"
+      ],
+      "settings": {
+        "editor.fontSize": 14,
+        "editor.tabSize": 2,
+        "editor.formatOnSave": true,
+        "terminal.integrated.defaultProfile.linux": "bash"
+      }
+    }
+  },
+  "forwardPorts": [5173],
+  "portsAttributes": {
+    "5173": {
+      "label": "開発サーバー",
+      "onAutoForward": "openBrowser"
+    }
+  }
+}
