@@ -10,6 +10,7 @@
     "vscode": {
       "extensions": [
         "anthropics.claude-code",
+        "yzhang.markdown-all-in-one",
         "dbaeumer.vscode-eslint",
         "esbenp.prettier-vscode",
         "bradlc.vscode-tailwindcss"
