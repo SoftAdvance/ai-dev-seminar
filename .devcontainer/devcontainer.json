@@ -9,7 +9,7 @@
   "customizations": {
     "vscode": {
       "extensions": [
-        "anthropics.claude-code",
+        "anthropic.claude-code",
         "yzhang.markdown-all-in-one",
         "dbaeumer.vscode-eslint",
         "esbenp.prettier-vscode",
